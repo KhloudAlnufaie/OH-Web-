@@ -9,6 +9,86 @@ body {
   background-color: #CADFF4;
   padding: 0;
 }
+
+
+
+
+article{text-align: right;}
+
+input[type="button"]{
+border: 0px;
+margin: 20px auto;
+text-align: center;
+border: 2px solid #6F6F70;
+padding: 14px 20px;
+background: #6F6F70;
+outline: none;
+color: white;
+border-radius: 20px;
+cursor: pointer;
+margin:10px;
+}
+
+select {
+border: 0px;
+margin: 20px auto;
+text-align: center;
+border: 2px solid #6F6F70;
+padding: 14px 20px;
+background: #6F6F70;
+outline: none;
+color: white;
+border-radius: 20px;
+cursor: pointer;
+margin:10px;
+}
+
+select:hover{
+background: white;
+color: gray;
+width: 80-098iipx;
+}
+
+
+
+input[type = "button"]:hover{
+background: white;
+color: gray;
+width: 80-098iipx;
+}
+
+input[type="text"]{
+border: 0px;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid white;
+padding: 14px 10px;
+width: 250px;
+outline: none;
+color: gray;
+border-radius: 20px;
+}
+
+input[type = "text"]:focus{
+border-color: #6F6F70;
+}
+
+form div {
+	float: right;
+	margin: 1%;
+}
+
+.positioning {
+  position: absolute;
+  right: 45%;
+  bottom: -7%;
+  
+}
+
+
+
+
 .topspace {
   margin-top: 40px;
 }
@@ -262,17 +342,13 @@ a:hover {
   color: #5E5E5E;
 }
 .home #head {
-  padding: 90px 0;
+  padding: 30px 0;
 }
 .home #head .title {
   font-size: 49px;
   font-size: 3.0625rem;
 }
-.home #head .tagline {
-  font-size: 16px;
-  font-size: 1rem;
-  margin: 15px 0 0;
-}
+
 /*********************************************************************
 
 
@@ -845,3 +921,7 @@ box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
 .search-container:hover{
 animation: hoverShake 0.15s linear 3;
 }
+h5{color: #6F6F70;}
+
+h4{color: #6F6F70;}
+
