@@ -1,7 +1,3 @@
-const readExcel = require('read-excel-file/node');
-const reader = require('xlsx');
-const nodemailer = require('nodemailer');
-let Ta_list = []
 
 class User{
   constructor(Fname, Sname, Tname, Lname, Email) { 
@@ -66,22 +62,24 @@ class Reservation{
   }
 }
 
-class Teacher extends User{
-  constructor(Arabic_name, OfficeNumber, Email, Gender, Schedule) { 
+export class Teacher extends User{
+  constructor(Fname, Sname, Tname, Lname, OfficeNumber, Email, Gender, Schedule, ID) { 
 	
+	/*
 	Arabic_name = Arabic_name.split(" ");
-	let name = [null, null, null, null]
+	let name = [" ", " ", " ", " "]
 	
 	for(let i =0; i< Arabic_name.length; i++){
 		name[i] = Arabic_name[i];
-	}
+	}*/
 	
-	super(name[0], name[1], name[2], name[3], Email);
+	super(Fname, Sname, Tname, Lname, Email);
 	this.Office_Hours = null;
 	this.Schedule = Schedule;
 	this.OfficeNumber = OfficeNumber;
 	this.Gender = Gender;
-	this.full_name = Arabic_name;
+	//this.full_name = Arabic_name;
+	this.ID = ID;
   }
  
 }
@@ -112,6 +110,22 @@ function Create_Teacher_list(data){
 return data;
 	
 }
+
+	
+function copy(){
+	
+	text = "\n" + document.getElementById('e1').innerHTML 
+	console.log(text);
+	text += "\n" + document.getElementById('e2').innerHTML 
+	console.log(text);
+	text += "\n" + document.getElementById('e3').innerHTML 
+	console.log(text);
+	
+	
+	const cb = navigator.clipboard;
+	cb.writeText(text)
+	
+	}
 
 
 function get_TA_name(){
@@ -159,6 +173,19 @@ function get_office_number(){
 		return office_number_list;
 	*/
 	return '3A-135';
+}
+
+function get_schedule(){
+	/*
+		let office_number_list = [];
+		let Ta_number = get_TA_number();
+		for(let i =0; i<Ta_number; i++ ){
+			office_number_list.push(Ta_list[i].OfficeNumber);
+		}
+
+		return office_number_list;
+	*/
+	return '';
 }
 	
 function get_TA_email(){
@@ -225,15 +252,7 @@ Ta_list = Create_Teacher_list(data);
 }
 
 
-// define the zip() function
-module.exports = function* zip(arrays) {
-  let iterators = arrays.map(a => a[Symbol.iterator]());
-  while (true) {
-    let results = iterators.map(it => it.next());
-    if (results.some(r => r.done)) return;
-    yield results.map(r => r.value);
-  }
-}
+
 
 
 
