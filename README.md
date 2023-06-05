@@ -1,4 +1,4 @@
-#1.Introduction
+# 1.Introduction
 An office hour application offers students to schedule an appointment with their teachers to discuss unclear points for them, discuss the exam results, or ask for guidance. In addition, it provides students with important information about their teachers, such as office numbers, email addresses, and schedules.
 
 ## 1.1	Problem Definition
