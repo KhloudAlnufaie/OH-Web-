@@ -17,4 +17,4 @@ Students sometimes have difficulty reaching a faculty member's information, such
 •	This application organizes communication between the teacher and the student by limiting the number of students that can reserve in a one-hour period.
 
 ## Files Structures
-![File structure](Front-end/Office hour app - Frame 342 (2).jpg)
+![File structure](Front-end/Files.jpg)
