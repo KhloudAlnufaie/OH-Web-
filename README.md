@@ -15,3 +15,6 @@ Students sometimes have difficulty reaching a faculty member's information, such
 •	Inform the teacher of the student's attendance by sending a notification after the student has made an appointment.
 •	Through the application, students will be able to schedule appointments with their teachers in order to facilitate communication.
 •	This application organizes communication between the teacher and the student by limiting the number of students that can reserve in a one-hour period.
+
+## Files Structures
+![Link Name](https://drive.google.com/file/d/1BJ-FCE8tw13tFtjDbIcyH4LEDdIo4WxK/view?usp=sharing)  
