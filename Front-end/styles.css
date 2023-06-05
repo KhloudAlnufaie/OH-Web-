@@ -10,9 +10,10 @@ body {
   padding: 0;
 }
 
+
 article{text-align: right;}
 
-input[type="button"], select{
+input[type="button"], select, input[type="submit"] {
 border: 0px;
 margin: 20px auto;
 text-align: center;
@@ -28,7 +29,7 @@ font-size: 18px;
 }
 
 
-input[type = "button"]:hover, select:hover{
+input[type = "button"]:hover, select:hover, input[type="submit"]:hover{
 background: white;
 color: gray;
 width: 80-098iipx;
